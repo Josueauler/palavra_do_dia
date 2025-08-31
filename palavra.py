@@ -44,7 +44,7 @@ sleep(1)
 versiculos= driver.find_elements(By.XPATH, "//p[@class]") # retorna versiculos desse livro
 link= driver.find_elements(By.XPATH, "//a[@class]")
 
-versiram= random.choice(versiculos[0:3]) #escolhe versiculos do indice 0 ao 3
+versiram= random.choice(versiculos[0:5]) #escolhe versiculos do indice 0 ao 3
 
 versiculo= versiram
 print('A palavra do dia é: {}\n{}'.format(link[10].text,versiculo.text))
